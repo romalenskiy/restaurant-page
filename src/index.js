@@ -1,1 +1,2 @@
-console.log('kek');
+import 'reset-css'
+import './app.scss'
