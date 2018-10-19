@@ -80,7 +80,7 @@ h2 {
   padding: 0.5rem; }
 
 #section-1 {
-  background-image: url(/dist/img/lending-1.jpg);
+  background-image: url(img/lending-1.jpg);
   position: relative; }
 
 #section-2 {
@@ -88,7 +88,7 @@ h2 {
   height: 80vh; }
 
 #section-3 {
-  background-image: url(/dist/img/lending-1.jpg);
+  background-image: url(img/lending-1.jpg);
   position: relative;
   height: 50vh;
   background-attachment: fixed; }
