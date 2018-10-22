@@ -11,8 +11,10 @@ markTab('about')
 
 
 // Tabs handler
-const tabNavigation = document.querySelector('.tabs-navigation')
-tabNavigation.addEventListener('mousedown', tabToggle)
+const tabNavigation = document.querySelectorAll('.tab-title')
+tabNavigation.forEach((tab) => {
+    tab.addEventListener('mousedown', tabToggle)
+})
 
 function tabToggle(tab) {
     const tabs = {
