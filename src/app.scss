@@ -68,6 +68,14 @@ section {
 }
 
 // Tabs
+h1 {
+    padding: 4rem 0;
+    font-family: 'Acme', sans-serif;
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+
 .tabs-navigation {
     display: flex;
     flex-direction: row;
@@ -96,12 +104,6 @@ section {
 #about-tab {
     text-align: center;
     padding-bottom: 4rem;
-    h1 {
-        padding: 4rem 0;
-        font-family: 'Acme', sans-serif;
-        font-size: 2.5rem;
-
-    }
     .about-us {
         display: flex;
         flex-flow: row wrap;
@@ -130,4 +132,74 @@ section {
         width: 3rem;
         transition: all 0.3s;
     }
+}
+
+#menu-tab {
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Passion One', Helvetica, cursive;
+    padding-bottom: 4rem;
+    .product {
+        flex-basis: 33.33333%;
+        padding: 0 1rem 1rem;
+        cursor: pointer;
+        &:hover {
+            .product-image {
+                background-size: 110%;
+            }
+        }
+    }
+    .product-image {
+        background-size: cover;
+        background-position: 50%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 30vh;
+        transition: all 0.4s ease;
+    }
+    .product-name {
+        color: white;
+        background-color: #ffae16;
+        text-transform: uppercase;
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+#chefburger {
+    background-image: url(https://statickfc.cdnvideo.ru/products/400/product_1014_1356046999.jpg);
+}
+
+#darkryeburger {
+    background-image: url(https://statickfc.cdnvideo.ru/products/400/product_844_1408373195.jpg)
+}
+
+#cheeseburger {
+    background-image: url(https://statickfc.cdnvideo.ru/products/400/product_712_1466080456.jpg)
+}
+
+#boxmasteroriginal {
+    background-image: url(https://statickfc.cdnvideo.ru/products/400/product_482_1414377064.jpg)
+}
+
+#twisteroriginal {
+    background-image: url(https://statickfc.cdnvideo.ru/products/400/product_459_84294897.jpg)
+}
+
+#hot-dog {
+    background-image: url(https://statickfc.cdnvideo.ru/products/400/product_267_762441408.jpg)
+}
+
+#hotwingsbucket-25 {
+    background-image: url(https://statickfc.cdnvideo.ru/products/400/product_111_1224802133.jpg)
+}
+
+#teriyakibites {
+    background-image: url(https://statickfc.cdnvideo.ru/products/400/product_638_403691422.jpg)
+}
+
+#lunchbox-5-300 {
+    background-image: url(https://statickfc.cdnvideo.ru/products/400/product_1046_710198914.png)
 }
