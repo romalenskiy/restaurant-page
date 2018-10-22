@@ -43,13 +43,15 @@ section {
 }
 
 #section-3 {
+    align-items: center;
+    justify-content: center;
     background-image: url(img/lending-1.jpg);
     position: relative;
     height: 30vh;
     background-attachment: fixed;
 }
 
-#title {
+.title {
     width: 30rem;
     z-index: 10;
 }
