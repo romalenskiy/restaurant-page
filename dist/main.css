@@ -143,54 +143,59 @@ h1 {
 
 #about-tab {
   text-align: center;
-  padding-bottom: 4rem; }
-  #about-tab .about-us {
-    display: flex;
-    flex-flow: row wrap; }
-  #about-tab .about-us-description {
-    flex: 0 0 auto;
-    width: 33.333333%;
-    padding: 0 1rem;
-    font-family: 'Niramit', sans-serif; }
-    #about-tab .about-us-description h2 {
-      font-size: 1.7rem;
-      font-weight: bold;
-      padding: 0.5rem 0 1rem; }
-    #about-tab .about-us-description p {
-      font-size: 1.2rem;
-      line-height: 1.5rem; }
-    #about-tab .about-us-description:hover .about-us-icon {
-      width: 3.5rem; }
-  #about-tab .about-us-icon {
-    width: 3rem;
-    transition: all 0.3s; }
+  padding-bottom: 3rem; }
+
+.about-us {
+  display: flex;
+  flex-flow: row wrap; }
+
+.about-us-description {
+  flex-basis: 33.33333%;
+  padding: 0 1rem 1rem;
+  font-family: 'Niramit', sans-serif; }
+  .about-us-description h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 0.5rem 0 1rem; }
+  .about-us-description p {
+    font-size: 1.2rem;
+    line-height: 1.5rem; }
+  .about-us-description:hover .about-us-icon {
+    width: 3.5rem; }
+
+.about-us-icon {
+  width: 3rem;
+  transition: all 0.3s; }
 
 #menu-tab {
   display: flex;
   flex-flow: row wrap;
   font-family: 'Passion One', Helvetica, cursive;
-  padding-bottom: 4rem; }
-  #menu-tab .product {
-    flex-basis: 33.33333%;
-    padding: 0 1rem 1rem;
-    cursor: pointer; }
-    #menu-tab .product:hover .product-image {
-      background-size: 110%; }
-  #menu-tab .product-image {
-    background-size: cover;
-    background-position: 50%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 30vh;
-    transition: all 0.4s ease; }
-  #menu-tab .product-name {
-    color: white;
-    background-color: #ffae16;
-    text-transform: uppercase;
-    font-size: 2rem;
-    text-align: center;
-    padding: 1rem; }
+  padding-bottom: 3rem; }
+
+.product {
+  flex-basis: 33.33333%;
+  padding: 0 1rem 1rem;
+  cursor: pointer; }
+  .product:hover .product-image {
+    background-size: 110%; }
+
+.product-image {
+  background-size: cover;
+  background-position: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30vh;
+  transition: all 0.4s ease; }
+
+.product-name {
+  color: white;
+  background-color: #ffae16;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem; }
 
 #chefburger {
   background-image: url(https://statickfc.cdnvideo.ru/products/400/product_1014_1356046999.jpg); }
@@ -225,5 +230,19 @@ h1 {
 
 #restaurants-map {
   width: 100%;
-  height: 37.5rem; }
+  height: 60vh; }
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  html {
+    font-size: 12px; } }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .title {
+    width: 15rem; }
+  .about-us-description, .product {
+    flex-basis: 100%; }
+  .product-name {
+    font-size: 1.5rem; } }
 
