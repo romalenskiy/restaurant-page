@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Acme|Niramit:400,700|Passion+One);
 /* http://meyerweb.com/eric/tools/css/reset/
    v4.0 | 20180602
    License: none (public domain)
@@ -51,6 +52,9 @@ table {
 	border-spacing: 0;
 }
 
+*, *:after, *:before {
+  box-sizing: border-box; }
+
 #content {
   perspective: 1px;
   perspective-origin: 0 0;
@@ -65,32 +69,27 @@ table {
 
 section {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   width: 100%;
-  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
 
-h2 {
-  font-size: 5rem;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 0.5rem; }
-
 #section-1 {
+  align-items: center;
+  justify-content: center;
   background-image: url(img/lending-1.jpg);
-  position: relative; }
+  position: relative;
+  height: 100vh; }
 
 #section-2 {
-  background-color: #a3080c;
-  height: 80vh; }
+  background-color: white;
+  box-shadow: 0 -2px 20px 0px rgba(0, 0, 0, 0.3); }
 
 #section-3 {
   background-image: url(img/lending-1.jpg);
   position: relative;
-  height: 50vh;
+  height: 30vh;
   background-attachment: fixed; }
 
 #title {
@@ -108,4 +107,53 @@ h2 {
   top: 0;
   right: 0;
   z-index: 3; }
+
+.tabs-navigation {
+  display: flex;
+  flex-direction: row;
+  background-color: #a3080c;
+  justify-content: center;
+  font-family: 'Passion One', Helvetica, cursive;
+  font-size: 1.5rem;
+  color: white; }
+
+.tab-title {
+  padding: 1rem;
+  transition: 0.3s;
+  cursor: pointer; }
+
+.tab-title:hover {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.tabs-content {
+  max-width: 64rem;
+  margin: 0 auto; }
+
+#about-tab {
+  text-align: center;
+  padding-bottom: 4rem; }
+  #about-tab h1 {
+    padding: 4rem 0;
+    font-family: 'Acme', sans-serif;
+    font-size: 2.5rem; }
+  #about-tab .about-us {
+    display: flex;
+    flex-flow: row wrap; }
+  #about-tab .about-us-description {
+    flex: 0 0 auto;
+    width: 33.333333%;
+    padding: 0 1rem;
+    font-family: 'Niramit', sans-serif; }
+    #about-tab .about-us-description h2 {
+      font-size: 1.7rem;
+      font-weight: bold;
+      padding: 0.5rem 0 1rem; }
+    #about-tab .about-us-description p {
+      font-size: 1.2rem;
+      line-height: 1.5rem; }
+    #about-tab .about-us-description:hover .about-us-icon {
+      width: 3.5rem; }
+  #about-tab .about-us-icon {
+    width: 3rem;
+    transition: all 0.3s; }
 
