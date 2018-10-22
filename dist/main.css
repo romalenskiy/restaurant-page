@@ -115,6 +115,9 @@ h1 {
   width: 100%;
   text-align: center; }
 
+.active {
+  text-decoration: underline; }
+
 .tabs-navigation {
   display: flex;
   flex-direction: row;
