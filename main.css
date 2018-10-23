@@ -123,7 +123,6 @@ section {
   z-index: 10; }
 
 #down-arrow {
-  cursor: pointer;
   position: absolute;
   bottom: 2%;
   z-index: 10;
