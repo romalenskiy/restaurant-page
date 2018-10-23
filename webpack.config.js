@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: './src/index.js',
@@ -12,11 +13,40 @@ module.exports = {
     rules: [
         {
           test: /\.css$/,
-          use: [MiniCssExtractPlugin.loader, "css-loader"]
+          use: [
+            MiniCssExtractPlugin.loader, 
+            "css-loader", 
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: [
+                  autoprefixer({
+                    browsers:['ie >= 8', 'last 10 version']
+                  })
+                ],
+                sourceMap: true
+              }
+            }
+          ]
         },
         {
           test: /\.scss$/,
-          use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+          use: [
+            MiniCssExtractPlugin.loader, 
+            "css-loader", 
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: [
+                  autoprefixer({
+                    browsers:['ie >= 8', 'last 4 version']
+                  })
+                ],
+                sourceMap: true
+              }
+            }, 
+            "sass-loader"
+          ]
         },
         {
           test: /\.(png|jpg|svg|gif)$/,
@@ -27,7 +57,7 @@ module.exports = {
                   name: '[path][name].[ext]',
                   context: path.resolve(__dirname, "src/")
               }
-          }
+            }
           ]
         }
     ]
