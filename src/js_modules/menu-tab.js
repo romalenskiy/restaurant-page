@@ -36,7 +36,7 @@ const getTab = function() {
             </div>
             <div class="product">
                 <div class="product-image" id="lunchbox-5-300"></div>
-                <h2 class="product-name">Lunchbox 5 for 300</h2>
+                <h2 class="product-name">Lunchbox 5 for 5$</h2>
             </div>
         </div>
     `
