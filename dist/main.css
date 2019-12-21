@@ -232,7 +232,9 @@ h1 {
     font-size: 1.2rem;
     line-height: 1.5rem; }
   .about-us-description:hover .about-us-icon {
-    width: 3.5rem; }
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2); }
 
 .about-us-icon {
   width: 3rem;
@@ -288,7 +290,7 @@ h1 {
   background-image: url(https://statickfc.cdnvideo.ru/products/400/product_712_1466080456.jpg); }
 
 #boxmasteroriginal {
-  background-image: url(https://statickfc.cdnvideo.ru/products/400/product_482_1414377064.jpg); }
+  background-image: url(https://s82079.cdn.ngenix.net/dVi8m74meQzJhjCYrwfEbvDK.png?dw=400); }
 
 #twisteroriginal {
   background-image: url(https://statickfc.cdnvideo.ru/products/400/product_459_84294897.jpg); }
@@ -300,7 +302,7 @@ h1 {
   background-image: url(https://statickfc.cdnvideo.ru/products/400/product_111_1224802133.jpg); }
 
 #teriyakibites {
-  background-image: url(https://statickfc.cdnvideo.ru/products/400/product_638_403691422.jpg); }
+  background-image: url(https://s82079.cdn.ngenix.net/ocDgGV4ptzogDh1eKrgnYLi4.png?dw=400); }
 
 #lunchbox-5-300 {
   background-image: url(https://statickfc.cdnvideo.ru/products/400/product_1046_710198914.png); }
